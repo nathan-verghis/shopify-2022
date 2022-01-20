@@ -1,0 +1,19 @@
+{
+  "name": "shopfiychallenge",
+  "version": "1.0.1",
+  "description": "Backend/Infrastructure Challenge Application",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "Nathan Verghis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "javascript-obfuscator": "^2.6.1",
+    "mariadb": "^2.5.5",
+    "nodemon": "^2.0.5",
+    "json2csv": "5.0.6"
+  }
+}

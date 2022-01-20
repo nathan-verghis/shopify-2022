@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inventory Manager</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nathan Verghis' Shopify Challenge">
+    <meta name="keywords" content="Nathan Verghis Shopify">
+    <meta name="author" content="Nathan Verghis">
+    <!-- Load jquery, bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <!-- Custom CSS End -->
+</head>
+<body>
+    <div name="inventory">
+        <h2>
+            Inventory
+        </h2>
+        <div class="scrolly">
+            <!--File Log Table-->
+            <table id="Inventory">
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Warehouse ID</th>
+                    <th>Quantity</th>
+                    <th>Meta Tags</th>
+                    <th>Delete</th>
+                </tr>
+                <div>
+                    <tr>
+                        <td>No Data</td>
+                        <td>No Data</td>
+                        <td>No Data</td>
+                        <td>No Data</td>
+                        <td>No Data</td>
+                        <td>No Data</td>
+                    </tr>
+                </div>
+            </table>
+        </div>
+    </div>
+    <br>
+    <div name="createNewInventory">
+        <h2>
+            Add to Inventory
+        </h2>
+        <form ref="createField" id="createField">
+            <div class="form-group">
+                <input type="text" placeholder="* Product ID *" id='newPID'>
+                <input type="text" placeholder="* Name * " id='newName'>
+                <input type="text" placeholder="* Warehouse ID *" id='newWID'>
+                <input type="text" placeholder="* Quantity *" id='newQuantity'>
+                <input type="text" placeholder="Meta Tags" id='newMeta'>
+            </div>
+            <div class="form-group">
+                <input type='submit' class="btn btn-secondary" value='Add'>
+                <p>Please fill fields marked *</p>
+            </div>
+
+        </form>
+
+
+    </div>
+    <br>
+    <div name="updateInventory">
+        <h2>
+            Update Selected
+        </h2>
+        <form ref="updateField" id="updateField">
+            <div class="form-group">
+                <input type="text" placeholder="* Product ID *" id='updatePID'>
+                <input type="text" placeholder="* Name * " id='updateName'>
+                <input type="text" placeholder="* Warehouse ID *" id='updateWID'>
+                <input type="text" placeholder="* Quantity *" id='updateQuantity'>
+                <input type="text" placeholder="Meta Tags" id='updateMeta'>
+            </div>
+            <div class="form-group">
+                <input type='submit' class="btn btn-secondary" value='Update' id='updateButton'>
+                <p>Please fill fields marked *</p>
+            </div>
+
+        </form>
+
+
+    </div>
+    <div name="export">
+        <h2>
+            Export To CSV
+        </h2>
+        <input type='button' class="btn btn-secondary" value='Export' id='exportButton'>
+    </div>
+
+    <!-- Leave me at the bottom of body -->
+    <script src="/index.js"></script>
+</body>
+</html>
